@@ -42,6 +42,7 @@ describe('<Pet />', () => {
       expect(
         wrapper.text().includes(GENDER_ICON_MALE) && !wrapper.text().includes(GENDER_ICON_FEMALE)
       ).to.be.true;
+      console.log(wrapper.text())
     });
 
     it('should render the correct gender icon for female pets', () => {
